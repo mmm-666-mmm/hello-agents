@@ -6,7 +6,9 @@
 
 - 上游：https://github.com/datawhalechina/hello-agents
 - 获取日期：2026-10-12（北京时间）
-- 来源版本：main 分支源码压缩包；未包含 Git 历史。
+- 来源版本：从个人 Fork 的 main 分支通过 Git 克隆，保留完整提交历史。
+- 个人仓库：https://github.com/mmm-666-mmm/hello-agents
+- Git 远程：origin 指向个人仓库；upstream 指向上游教程仓库。
 - 上游教程、示例与许可证保留在原目录。
 
 ## 目录入口

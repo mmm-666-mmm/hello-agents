@@ -32,7 +32,7 @@ Python 按代码需要补：先学列表、字典、函数、类、模块导入�
 ## 当前环境状态
 
 已独立安装 Python 3.13.16（64 位），位置为 `C:\Program Files\Python313`。
-项目虚拟环境位于 `.venv/`，已安装并验证 `requests`、`tavily-python`、`openai`，不依赖 Codex 自带 Python。
+项目虚拟环境位于 `.venv/`，已安装并验证 `requests`、`tavily-python`、`openai`、`python-dotenv`，不依赖 Codex 自带 Python。
 尚未配置模型服务或运行联网模型示例。
 运行第一个模型示例前，需要选择模型服务并配置对应环境变量；也可以后续配置本地模型。
 RTX 4060 的具体显存尚未确认，模型训练配置留到训练阶段确定。

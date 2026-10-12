@@ -1,0 +1,4 @@
+# 第一章最小 Agent 所需的直接依赖；已在 Python 3.13.16 / Windows 64 位上验证导入。
+requests==2.34.2
+tavily-python==0.8.5
+openai==3.29.0

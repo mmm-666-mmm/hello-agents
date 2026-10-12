@@ -31,9 +31,34 @@ Python 按代码需要补：先学列表、字典、函数、类、模块导入�
 
 ## 当前环境状态
 
-源码已下载。尚未创建 Python 虚拟环境、安装依赖、配置模型服务或运行示例。
+已独立安装 Python 3.13.16（64 位），位置为 `C:\Program Files\Python313`。
+项目虚拟环境位于 `.venv/`，已安装并验证 `requests`、`tavily-python`、`openai`，不依赖 Codex 自带 Python。
+尚未配置模型服务或运行联网模型示例。
 运行第一个模型示例前，需要选择模型服务并配置对应环境变量；也可以后续配置本地模型。
 RTX 4060 的具体显存尚未确认，模型训练配置留到训练阶段确定。
+
+### 在 PowerShell 中使用
+
+安装 Python 后，关闭旧终端并新开一个 PowerShell，以加载更新后的 PATH。
+
+```powershell
+cd C:\Users\Administrator\Desktop\m\hello-agents
+python --version
+.\.venv\Scripts\python.exe --version
+# 运行自己的脚本：
+# .\.venv\Scripts\python.exe learning\exercises\你的脚本.py
+```
+
+上述方式无需激活环境。给项目安装依赖时使用 `.\.venv\Scripts\python.exe -m pip`。
+如果需要重建环境：
+
+```powershell
+py -3.13 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r learning\requirements-first-agent.txt
+```
+
+如果 PyPI 连接失败，可以在安装命令末尾加上 `--proxy http://127.0.0.1:7897`，前提是本机代理正在该端口运行。
+`.venv/` 已由 Git 忽略，不上传到 GitHub。
 
 ## 算法学习的验收方式
 
